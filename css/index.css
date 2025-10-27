@@ -1,0 +1,401 @@
+/* 首页css */
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 首页背景颜色灰色 */
+body {
+  background-color: #f3f5f7;
+}
+
+/* 头部区域 */
+.header {
+  height: 100px;
+  background-color: #fff;
+}
+
+.header .wrapper {
+  display: flex;
+  padding-top: 29px;
+}
+
+/* 头部logo */
+.logo a {
+  display: block;
+  width: 195px;
+  height: 41px;
+  background-image: url(../images/logo.png);
+  font-size: 0px;
+}
+
+/* 头部导航 */
+.nav ul {
+  display: flex;
+}
+
+.nav {
+  margin-left: 102px;
+}
+
+.nav li {
+  margin-right: 24px;
+}
+
+.nav li a {
+  display: block;
+  padding: 6px 8px;
+  font-size: 19px;
+  line-height: 27px;
+}
+
+/* 蓝色边框线 */
+.nav li .active,
+.nav li a:hover {
+  border-bottom: 2px solid #00a4ff;
+}
+
+/* 头部搜索 */
+.search {
+  display: flex;
+  width: 412px;
+  height: 40px;
+  background-color: #ececec;
+  border-radius: 20px;
+  margin-left: 64px;
+  padding-left: 19px;
+  padding-right: 12px;
+}
+
+.search input {
+  flex: 1;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  /* 去掉表单控件的焦点框 */
+  outline: none;
+}
+
+/* 选中placeholder属性文字样式 */
+.search input::placeholder {
+  font-size: 14px;
+  color: #999;
+}
+
+.search a {
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/search.png);
+  /* 侧轴垂直居中 */
+  align-self: center;
+}
+
+/* 头部用户 */
+.user {
+  margin-left: 32px;
+  margin-top: 4px;
+}
+
+/* 让图片的中线与文字的中线对齐 */
+.user img {
+  vertical-align: middle;
+  margin-right: 7px;
+}
+
+.user span {
+  font-size: 16px;
+  color: #666;
+  line-height: 23px;
+}
+
+/* banner区域 */
+.banner {
+  height: 420px;
+  background-color: #0092cb;
+  margin: 20px 0;
+}
+
+.banner .wrapper {
+  height: 420px;
+  background-image: url(../uploads/banner.png);
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 191px;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0.42);
+  padding: 3px 20px;
+}
+
+.banner .left a {
+  /* 块级：宽度是父级的100% */
+  display: block;
+  height: 46px;
+  line-height: 46px;
+  font-size: 16px;
+  color: #fff;
+  background: url(../images/right.png) no-repeat right center;
+}
+
+.banner .left a:hover {
+  background-image: url(../images/right-hover.png);
+  color: #00a4ff;
+}
+
+.banner .right {
+  margin-top: 60px;
+  width: 218px;
+  height: 305px;
+  border-radius: 10px;
+  background-color: #209dd5;
+}
+
+.right h3 {
+  margin-left: 14px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.content {
+  width: 218px;
+  height: 257px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 14px 14px;
+}
+
+.right .content dl {
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.right .content dl dt {
+  margin-bottom: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+}
+
+.right .content dl dd {
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+
+.right .content dl dd span {
+  color: #00a4ff;
+}
+
+.right .content dl dd strong {
+  font-weight: 400;
+  color: #7d7d7d;
+}
+
+.right .content a {
+  display: block;
+  width: 190px;
+  height: 32px;
+  border-radius: 15px;
+  background-color: #00a4ff;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* 精品推荐 */
+.recommend .wrapper {
+  display: flex;
+  background-color: #fff;
+  height: 60px;
+  box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, 0.5);
+  padding: 0 20px;
+  line-height: 60px;
+
+}
+
+.recommend .wrapper ul {
+  display: flex;
+  /* 除去标题和修改兴趣的尺寸，父级剩余尺寸都给ul，实现把修改兴趣挤到最右端 */
+  flex: 1;
+}
+
+.recommend .wrapper h3 {
+  font-size: 18px;
+  color: #00a4ff;
+  font-weight: 400;
+}
+
+.recommend .wrapper ul li a {
+  justify-content: space-around;
+  padding: 0 24px;
+  border-right: 1px solid #e0e0e0;
+  font-size: 18px;
+}
+
+.recommend .wrapper ul li:last-child a {
+  border-right: 0;
+}
+
+.recommend .wrapper .modify {
+  font-size: 16px;
+  color: #00a4ff;
+}
+
+.course .wrapper {
+  height: auto;
+}
+
+/* 标题-公共类,与其他区域共用 */
+.hd {
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hd h3 {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.hd .more {
+  padding-right: 20px;
+  font-size: 14px;
+  color: #999;
+  background: url(../images/more.png) no-repeat right center;
+
+}
+
+.hd ul {
+  display: flex;
+}
+
+.hd ul li a:hover {
+  color: #00a4ff;
+}
+
+/* 课程内容-公共类 */
+.bd ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bd ul li {
+  width: 228px;
+  height: 271px;
+  margin-bottom: 14px;
+}
+
+.bd ul li .pic {
+  height: 156px;
+
+}
+
+.bd ul li .text {
+  height: 115px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* 照着大的(两行)写尺寸 */
+.text h4 {
+  height: 40px;
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text p {
+  color: #999;
+  line-height: 20px;
+}
+
+.text p span {
+  color: #fa6400;
+}
+
+.text p i {
+  font-style: normal;
+}
+
+.hd li {
+  margin-right: 60px;
+  font-size: 16px;
+}
+
+.hd .active {
+  color: #00a4ff;
+}
+
+.bd {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bd .bd-left {
+  display: block;
+  width: 200px;
+}
+
+.bd .bd-right {
+  display: block;
+  width: 957px;
+}
+
+.bd .bd-left .top {
+  margin-bottom: 15px;
+  height: 100px;
+}
+
+/* 版权区域 */
+.footer {
+  margin-top: 60px;
+  background-color: #fff;
+  width: 100%;
+  height: 273px;
+}
+
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+.footer .footer-left {
+  width: 440px;
+}
+
+.footer .footer-left p {
+  margin-top: 24px;
+  margin-bottom: 14px;
+  font-size: 12px;
+  line-height: 17px;
+  color: #666;
+}
+
+.footer .footer-left .download a {
+  border: 1px solid#00a4ff;
+  font-size: 16px;
+  color: #00a4ff;
+  padding: 10px 20px;
+}
+
+.footer .footer-right {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding-left: 40px;
+}
+
+.footer .footer-right dt {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
